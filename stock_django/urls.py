@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1 import views
+from app1 import controller
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("index/", views.index),
+    path("index/", controller.index),
+    path("start_star/<str:firstDate>/<str:secondDate>/<str:thirdDate>", controller.startStarController),
 ]
