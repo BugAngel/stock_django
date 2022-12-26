@@ -20,5 +20,5 @@ from app1 import controller
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("index/", controller.index),
-    path("start_star/<str:firstDate>/<str:secondDate>/<str:thirdDate>", controller.startStarController),
+    path("start_star/", controller.startStarController),
 ]
